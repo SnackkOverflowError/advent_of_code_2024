@@ -1,1 +1,4 @@
 .proof_ownership
+.clj-kondo
+.cpcache
+.lsp
