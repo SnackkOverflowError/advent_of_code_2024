@@ -13,9 +13,8 @@
 )
 
 (defn tfdata [input_name] 
-  (let [input (slurp input_name)]
-
-  (let [split_input (str/split input #"\n")]
+  (let [input (slurp input_name)
+        split_input (str/split input #"\n")]
     ; I know this should really just be a single loop, but im having fun 
     ; learning fp and mapping and getting used to everything
     [
@@ -23,7 +22,7 @@
      (map (fn [value] (Integer/parseInt (split_list 1 value))) split_input)
     ]
   )
-))
+)
 
 (defn part_1 [] 
   (println "part 1")
